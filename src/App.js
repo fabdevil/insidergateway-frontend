@@ -8,7 +8,7 @@ function App() {
 
   const fetchTransactions = async () => {
     try {
-      const response = await fetch(`https://your-backend-url/api/transactions/${address}`);
+      const response = await fetch(`https://insidergateway-backend.netlify.app/api/transactions/${address}`);
       const data = await response.json();
       setTransactions(data);
     } catch (error) {
